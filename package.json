@@ -1,0 +1,28 @@
+{
+  "name": "lite-template",
+  "version": "1.0.0",
+  "description": "node-lite-template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "browser-sync start --config \"./bs-config.js\"",
+    "ejs": "ejs-cli -b src/ejs/ \"**/*.ejs\" -e parts/ -o public/",
+    "watch": "chokidar \"src/ejs/\" -c \"npm run ejs\" --initial"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaur0227/lite-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaur0227/lite-template/issues"
+  },
+  "homepage": "https://github.com/gaur0227/lite-template#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "chokidar-cli": "^3.0.0",
+    "ejs-cli": "^2.2.3"
+  }
+}
